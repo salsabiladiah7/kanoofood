@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">kanoofood</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Andiek Suncahyo</string>
+    <string name="nav_header_subtitle">Customer</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_order">Order</string>
+    <string name="menu_user">User</string>
+    <string name="menu_store">Store</string>
+    <string name="menu_logout">LogOut</string>
+
+    />
+</resources>
