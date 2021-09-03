@@ -1,0 +1,1018 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_beranda"
+    tools:context=".admin_ui.store.StoreFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Let's Start"
+            android:textColor="#A340BC"
+            android:textSize="30dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Your STORE"
+                android:textColor="#A340BC"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/btn_addFood"
+                android:layout_width="95dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="200dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="New Store"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                app:backgroundTint="#A340BC"
+                app:shapeAppearanceOverlay="@style/Button5" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="List Store"
+            android:textColor="#A340BC"
+            android:textSize="17dp"></TextView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="21dp"
+            android:layout_marginBottom="10dp"
+            app:cardBackgroundColor="#E3C5FD"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="4dp"
+                            android:src="@drawable/search"></ImageView>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="4dp"
+                                    android:fontFamily="@font/poppinsmedium"
+                                    android:text="Search"
+                                    android:textColor="#A340BC"
+                                    android:textSize="15dp">
+
+                                </TextView>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="390dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poppinssemibold"
+                                        android:text="RM Pagi Sore"
+                                        android:textColor="#0C0C0C"
+                                        android:textSize="14dp" />
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content">
+
+                                                <ImageView
+                                                    android:layout_width="17dp"
+                                                    android:layout_height="17dp"
+                                                    android:src="@drawable/maps" />
+                                            </LinearLayout>
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="3dp"
+                                                android:layout_marginTop="4dp"
+                                                android:fontFamily="@font/poppinsmedium"
+                                                android:text="Jl.Kranggan No.1 Sawahan,kota SBY"
+                                                android:textColor="#706F6F"
+                                                android:textSize="11dp" />
+                                        </LinearLayout>
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content">
+
+                                                <ImageView
+                                                    android:layout_width="17dp"
+                                                    android:layout_height="17dp"
+                                                    android:layout_marginLeft="2dp"
+                                                    android:layout_marginTop="5dp"
+                                                    android:src="@drawable/icon_clock" />
+                                            </LinearLayout>
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="4dp"
+                                                android:layout_marginTop="7dp"
+                                                android:fontFamily="@font/poppinsmedium"
+                                                android:text="08.00 - 21.00"
+                                                android:textColor="#4984C6"
+                                                android:textSize="11dp" />
+                                        </LinearLayout>
+                                    </RelativeLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="4dp"
+                                        android:fontFamily="@font/poppinsmedium"
+                                        android:text="Rumah Makan Padang"
+                                        android:textColor="#706F6F"
+                                        android:textSize="11dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        android:id="@+id/btn_food"
+                                        android:layout_width="60dp"
+                                        android:layout_height="35dp"
+                                        android:fontFamily="@font/poppinssemibold"
+                                        android:gravity="center"
+                                        android:text="Food"
+                                        android:textColor="@color/white"
+                                        android:textSize="7dp"
+                                        app:backgroundTint="#A340BC"
+                                        app:shapeAppearanceOverlay="@style/Button5" />
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="170dp"
+                                                android:orientation="horizontal">
+
+                                                <Button
+                                                    android:id="@+id/btn_editStore"
+                                                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                                    android:layout_width="55dp"
+                                                    android:layout_height="35dp"
+                                                    android:fontFamily="@font/poppinssemibold"
+                                                    android:text="Edit"
+                                                    android:textAllCaps="false"
+                                                    android:textColor="#FDB407"
+                                                    android:textSize="8dp"
+                                                    app:shapeAppearanceOverlay="@style/Button5"
+                                                    app:strokeColor="#FDB407" />
+
+                                                <Button
+                                                    android:id="@+id/btn_delStore"
+                                                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                                    android:layout_width="65dp"
+                                                    android:layout_height="35dp"
+                                                    android:layout_marginLeft="5dp"
+                                                    android:fontFamily="@font/poppinssemibold"
+                                                    android:text="Delete"
+                                                    android:textAllCaps="false"
+                                                    android:textColor="#E50C0C"
+                                                    android:textSize="8dp"
+                                                    app:shapeAppearanceOverlay="@style/Button5"
+                                                    app:strokeColor="#E50C0C" />
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="390dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poppinssemibold"
+                                        android:text="Waroeng Kopi"
+                                        android:textColor="#0C0C0C"
+                                        android:textSize="14dp" />
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content">
+
+                                                <ImageView
+                                                    android:layout_width="17dp"
+                                                    android:layout_height="17dp"
+                                                    android:src="@drawable/maps" />
+                                            </LinearLayout>
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="3dp"
+                                                android:layout_marginTop="4dp"
+                                                android:fontFamily="@font/poppinsmedium"
+                                                android:text="Jl.Khairul Anwar no 15-17 Darmo,Kec Wonokromo,Surabaya"
+                                                android:textColor="#706F6F"
+                                                android:textSize="11dp" />
+                                        </LinearLayout>
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content">
+
+                                                <ImageView
+                                                    android:layout_width="17dp"
+                                                    android:layout_height="17dp"
+                                                    android:layout_marginLeft="2dp"
+                                                    android:layout_marginTop="5dp"
+                                                    android:src="@drawable/icon_clock" />
+                                            </LinearLayout>
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="4dp"
+                                                android:layout_marginTop="7dp"
+                                                android:fontFamily="@font/poppinsmedium"
+                                                android:text="15.00 - 23.00"
+                                                android:textColor="#4984C6"
+                                                android:textSize="11dp" />
+                                        </LinearLayout>
+                                    </RelativeLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="4dp"
+                                        android:fontFamily="@font/poppinsmedium"
+                                        android:text="Warkop Nogki asix"
+                                        android:textColor="#706F6F"
+                                        android:textSize="11dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        android:layout_width="60dp"
+                                        android:layout_height="35dp"
+                                        android:fontFamily="@font/poppinssemibold"
+                                        android:gravity="center"
+                                        android:text="Food"
+                                        android:textColor="@color/white"
+                                        android:textSize="7dp"
+                                        app:backgroundTint="#A340BC"
+                                        app:shapeAppearanceOverlay="@style/Button5" />
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="170dp"
+                                                android:orientation="horizontal">
+
+                                                <Button
+                                                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                                    android:layout_width="55dp"
+                                                    android:layout_height="35dp"
+                                                    android:fontFamily="@font/poppinssemibold"
+                                                    android:text="Edit"
+                                                    android:textAllCaps="false"
+                                                    android:textColor="#FDB407"
+                                                    android:textSize="8dp"
+                                                    app:shapeAppearanceOverlay="@style/Button5"
+                                                    app:strokeColor="#FDB407" />
+
+                                                <Button
+                                                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                                    android:layout_width="65dp"
+                                                    android:layout_height="35dp"
+                                                    android:layout_marginLeft="5dp"
+                                                    android:fontFamily="@font/poppinssemibold"
+                                                    android:text="Delete"
+                                                    android:textAllCaps="false"
+                                                    android:textColor="#E50C0C"
+                                                    android:textSize="8dp"
+                                                    app:shapeAppearanceOverlay="@style/Button5"
+                                                    app:strokeColor="#E50C0C" />
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="390dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poppinssemibold"
+                                        android:text="KFC"
+                                        android:textColor="#0C0C0C"
+                                        android:textSize="14dp" />
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content">
+
+                                                <ImageView
+                                                    android:layout_width="17dp"
+                                                    android:layout_height="17dp"
+                                                    android:src="@drawable/maps" />
+                                            </LinearLayout>
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="3dp"
+                                                android:layout_marginTop="4dp"
+                                                android:fontFamily="@font/poppinsmedium"
+                                                android:text="Jl.Diponegoro No.217,Darmo,Kota SBY"
+                                                android:textColor="#706F6F"
+                                                android:textSize="11dp" />
+                                        </LinearLayout>
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content">
+
+                                                <ImageView
+                                                    android:layout_width="17dp"
+                                                    android:layout_height="17dp"
+                                                    android:layout_marginLeft="2dp"
+                                                    android:layout_marginTop="5dp"
+                                                    android:src="@drawable/icon_clock" />
+                                            </LinearLayout>
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="4dp"
+                                                android:layout_marginTop="7dp"
+                                                android:fontFamily="@font/poppinsmedium"
+                                                android:text="06.00 - 24.00"
+                                                android:textColor="#4984C6"
+                                                android:textSize="11dp" />
+                                        </LinearLayout>
+                                    </RelativeLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="4dp"
+                                        android:fontFamily="@font/poppinsmedium"
+                                        android:text="Kentucky Fried Chiken"
+                                        android:textColor="#706F6F"
+                                        android:textSize="11dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        android:layout_width="60dp"
+                                        android:layout_height="35dp"
+                                        android:fontFamily="@font/poppinssemibold"
+                                        android:gravity="center"
+                                        android:text="Food"
+                                        android:textColor="@color/white"
+                                        android:textSize="7dp"
+                                        app:backgroundTint="#A340BC"
+                                        app:shapeAppearanceOverlay="@style/Button5" />
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="170dp"
+                                                android:orientation="horizontal">
+
+                                                <Button
+                                                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                                    android:layout_width="55dp"
+                                                    android:layout_height="35dp"
+                                                    android:fontFamily="@font/poppinssemibold"
+                                                    android:text="Edit"
+                                                    android:textAllCaps="false"
+                                                    android:textColor="#FDB407"
+                                                    android:textSize="8dp"
+                                                    app:shapeAppearanceOverlay="@style/Button5"
+                                                    app:strokeColor="#FDB407" />
+
+                                                <Button
+                                                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                                    android:layout_width="65dp"
+                                                    android:layout_height="35dp"
+                                                    android:layout_marginLeft="5dp"
+                                                    android:fontFamily="@font/poppinssemibold"
+                                                    android:text="Delete"
+                                                    android:textAllCaps="false"
+                                                    android:textColor="#E50C0C"
+                                                    android:textSize="8dp"
+                                                    app:shapeAppearanceOverlay="@style/Button5"
+                                                    app:strokeColor="#E50C0C" />
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="390dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poppinssemibold"
+                                        android:text="Kober Mie Setan"
+                                        android:textColor="#0C0C0C"
+                                        android:textSize="14dp" />
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content">
+
+                                                <ImageView
+                                                    android:layout_width="17dp"
+                                                    android:layout_height="17dp"
+                                                    android:src="@drawable/maps" />
+                                            </LinearLayout>
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="3dp"
+                                                android:layout_marginTop="4dp"
+                                                android:fontFamily="@font/poppinsmedium"
+                                                android:text="Jl.Sukomanunggal,Sukomanunggal,Kota SBY"
+                                                android:textColor="#706F6F"
+                                                android:textSize="11dp" />
+                                        </LinearLayout>
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content">
+
+                                                <ImageView
+                                                    android:layout_width="17dp"
+                                                    android:layout_height="17dp"
+                                                    android:layout_marginLeft="2dp"
+                                                    android:layout_marginTop="5dp"
+                                                    android:src="@drawable/icon_clock" />
+                                            </LinearLayout>
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="4dp"
+                                                android:layout_marginTop="7dp"
+                                                android:fontFamily="@font/poppinsmedium"
+                                                android:text="09.00 - 20.00"
+                                                android:textColor="#4984C6"
+                                                android:textSize="11dp" />
+                                        </LinearLayout>
+                                    </RelativeLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="4dp"
+                                        android:fontFamily="@font/poppinsmedium"
+                                        android:text="Tentukan levelmu sendiri!!"
+                                        android:textColor="#706F6F"
+                                        android:textSize="11dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        android:layout_width="60dp"
+                                        android:layout_height="35dp"
+                                        android:fontFamily="@font/poppinssemibold"
+                                        android:gravity="center"
+                                        android:text="Food"
+                                        android:textColor="@color/white"
+                                        android:textSize="7dp"
+                                        app:backgroundTint="#A340BC"
+                                        app:shapeAppearanceOverlay="@style/Button5" />
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="170dp"
+                                                android:orientation="horizontal">
+
+                                                <Button
+                                                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                                    android:layout_width="55dp"
+                                                    android:layout_height="35dp"
+                                                    android:fontFamily="@font/poppinssemibold"
+                                                    android:text="Edit"
+                                                    android:textAllCaps="false"
+                                                    android:textColor="#FDB407"
+                                                    android:textSize="8dp"
+                                                    app:shapeAppearanceOverlay="@style/Button5"
+                                                    app:strokeColor="#FDB407" />
+
+                                                <Button
+                                                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                                    android:layout_width="65dp"
+                                                    android:layout_height="35dp"
+                                                    android:layout_marginLeft="5dp"
+                                                    android:fontFamily="@font/poppinssemibold"
+                                                    android:text="Delete"
+                                                    android:textAllCaps="false"
+                                                    android:textColor="#E50C0C"
+                                                    android:textSize="8dp"
+                                                    app:shapeAppearanceOverlay="@style/Button5"
+                                                    app:strokeColor="#E50C0C" />
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="390dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poppinssemibold"
+                                        android:text="Maysoto"
+                                        android:textColor="#0C0C0C"
+                                        android:textSize="14dp" />
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content">
+
+                                                <ImageView
+                                                    android:layout_width="17dp"
+                                                    android:layout_height="17dp"
+                                                    android:src="@drawable/maps" />
+                                            </LinearLayout>
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="3dp"
+                                                android:layout_marginTop="4dp"
+                                                android:fontFamily="@font/poppinsmedium"
+                                                android:text="Jl.Sukomanunggal,Sukomanunggal,Kota SBY"
+                                                android:textColor="#706F6F"
+                                                android:textSize="11dp" />
+                                        </LinearLayout>
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content">
+
+                                                <ImageView
+                                                    android:layout_width="17dp"
+                                                    android:layout_height="17dp"
+                                                    android:layout_marginLeft="2dp"
+                                                    android:layout_marginTop="5dp"
+                                                    android:src="@drawable/icon_clock" />
+                                            </LinearLayout>
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="4dp"
+                                                android:layout_marginTop="7dp"
+                                                android:fontFamily="@font/poppinsmedium"
+                                                android:text="09.00 - 20.00"
+                                                android:textColor="#4984C6"
+                                                android:textSize="11dp" />
+                                        </LinearLayout>
+                                    </RelativeLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="4dp"
+                                        android:fontFamily="@font/poppinsmedium"
+                                        android:text="Tentukan levelmu sendiri!!"
+                                        android:textColor="#706F6F"
+                                        android:textSize="11dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        android:layout_width="60dp"
+                                        android:layout_height="35dp"
+                                        android:fontFamily="@font/poppinssemibold"
+                                        android:gravity="center"
+                                        android:text="Food"
+                                        android:textColor="@color/white"
+                                        android:textSize="7dp"
+                                        app:backgroundTint="#A340BC"
+                                        app:shapeAppearanceOverlay="@style/Button5" />
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="170dp"
+                                                android:orientation="horizontal">
+
+                                                <Button
+                                                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                                    android:layout_width="55dp"
+                                                    android:layout_height="35dp"
+                                                    android:fontFamily="@font/poppinssemibold"
+                                                    android:text="Edit"
+                                                    android:textAllCaps="false"
+                                                    android:textColor="#FDB407"
+                                                    android:textSize="8dp"
+                                                    app:shapeAppearanceOverlay="@style/Button5"
+                                                    app:strokeColor="#FDB407" />
+
+                                                <Button
+                                                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                                    android:layout_width="65dp"
+                                                    android:layout_height="35dp"
+                                                    android:layout_marginLeft="5dp"
+                                                    android:fontFamily="@font/poppinssemibold"
+                                                    android:text="Delete"
+                                                    android:textAllCaps="false"
+                                                    android:textColor="#E50C0C"
+                                                    android:textSize="8dp"
+                                                    app:shapeAppearanceOverlay="@style/Button5"
+                                                    app:strokeColor="#E50C0C" />
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

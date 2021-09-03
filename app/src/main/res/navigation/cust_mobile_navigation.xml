@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cust_mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.mafaa.kanoofood.customer_ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/cust_fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_order"
+        android:name="com.mafaa.kanoofood.customer_ui.order.OrderFragment"
+        android:label="@string/menu_order"
+        tools:layout="@layout/cust_fragment_order" />
+
+    <fragment
+        android:id="@+id/nav_user"
+        android:name="com.mafaa.kanoofood.customer_ui.payment.PaymentFragment"
+        android:label="@string/menu_user"
+        tools:layout="@layout/cust_fragment_payment" />
+</navigation>

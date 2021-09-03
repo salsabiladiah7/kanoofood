@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="21dp"
+        app:cardCornerRadius="8dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_Nama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="Nama"
+                    android:textColor="#3D3838"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/tv_Level"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:layout_toRightOf="@+id/tv_Nama"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:gravity="right"
+                    android:text="Admin"
+                    android:textColor="#4984C6"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="Gender"
+                        android:textColor="#000000"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="Tgl Lahir"
+                        android:textColor="#000000"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="No.Hp"
+                        android:textColor="#000000"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="Email"
+                        android:textColor="#000000"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text=":"
+                        android:textColor="#000000"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text=":"
+                        android:textColor="#000000"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text=":"
+                        android:textColor="#000000"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text=":"
+                        android:textColor="#000000"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_Gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="laki-laki"
+                        android:textColor="#000000"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/tv_TglLahir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="2021-09-01"
+                        android:textColor="#000000"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/tv_NoHp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="081234567890"
+                        android:textColor="#000000"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/tv_Email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="nama@gmail.com"
+                        android:textColor="#000000"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginLeft="57dp"
+                    android:gravity="right"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_EditUser"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="4dp"
+                        android:fontFamily="@font/poppinssemibold"
+                        android:gravity="center"
+                        android:text="Edit"
+                        android:textAllCaps="false"
+                        android:textColor="#FDB407"
+                        android:textSize="10dp"
+                        app:shapeAppearanceOverlay="@style/Button5"
+                        app:strokeColor="#FDB407" />
+
+                    <Button
+                        android:id="@+id/btn_DeleteUser"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:fontFamily="@font/poppinssemibold"
+                        android:text="Delete"
+                        android:textAllCaps="false"
+                        android:textColor="#E50C0C"
+                        android:textSize="10dp"
+                        app:shapeAppearanceOverlay="@style/Button5"
+                        app:strokeColor="#E50C0C" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
