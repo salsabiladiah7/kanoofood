@@ -1,5 +1,6 @@
 package com.mafaa.kanoofood.admin_ui.user;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -33,6 +34,21 @@ public class UserFragment extends Fragment {
     private UsersAdapater usersAdapater;
     private List<Users> usersList;
 
+    private Context mContext;
+
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        mContext = context;
+    }
+
+    @Override
+    public void onDetach() {
+        super.onDetach();
+        mContext = null;
+    }
+
     public static UserFragment newInstance() {
         return new UserFragment();
     }
@@ -50,6 +66,7 @@ public class UserFragment extends Fragment {
         LoadAllUsers();
         return view;
     }
+
 
     private void userRecycleList(View view) {
         recyclerView = view.findViewById(R.id.RecycleList);
@@ -93,11 +110,11 @@ public class UserFragment extends Fragment {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(UserFragment.newInstance().getContext(), error.toString(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(mContext.getApplicationContext(), error.toString(), Toast.LENGTH_SHORT).show();
 
             }
         });
-        RequestQueue requestQueue = Volley.newRequestQueue(UserFragment.newInstance().getContext());
+        RequestQueue requestQueue = Volley.newRequestQueue(mContext.getApplicationContext());
         requestQueue.add(request);
     }
 

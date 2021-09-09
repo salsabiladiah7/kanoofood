@@ -91,7 +91,7 @@
                             android:layout_height="22dp"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="4dp"
-                            android:src="@drawable/search"></ImageView>
+                            android:src="@drawable/search" />
 
                     </LinearLayout>
 
@@ -140,7 +140,8 @@
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/RecycleList"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="21dp" />
             </ScrollView>
         </LinearLayout>
 
