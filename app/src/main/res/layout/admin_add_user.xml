@@ -103,7 +103,7 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <RadioGroup
-                    android:id="@+id/gender"
+                    android:id="@+id/rg_gender"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -115,7 +115,7 @@
                     android:padding="3dp">
 
                     <RadioButton
-                        android:id="@+id/btn_laki"
+                        android:id="@+id/rb_laki"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -127,7 +127,7 @@
                         android:textSize="13sp" />
 
                     <RadioButton
-                        android:id="@+id/btn_perempuan"
+                        android:id="@+id/rb_perempuan"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"

@@ -25,7 +25,9 @@
         <activity android:name=".admin_ui.form.AddFood" />
         <activity android:name=".admin_ui.form.EditStore" />
         <activity android:name=".Register" />
-        <activity android:name=".Login" />
+        <activity android:name=".Login">
+
+        </activity>
         <activity
             android:name=".AdminActivity"
             android:theme="@style/Theme.Kanoofood.NoActionBar">

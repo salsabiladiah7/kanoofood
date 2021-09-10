@@ -21,7 +21,7 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="25dp">
+                android:layout_height="27dp">
 
                 <TextView
                     android:id="@+id/tv_Nama"
@@ -30,6 +30,7 @@
                     android:fontFamily="@font/poppinsbold"
                     android:text="Nama"
                     android:textColor="#3D3838"
+                    android:textAllCaps="true"
                     android:textSize="17sp" />
 
                 <TextView
@@ -37,7 +38,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="22dp"
                     android:layout_toRightOf="@+id/tv_Nama"
-                    android:fontFamily="@font/poppinssemibold"
+                    android:fontFamily="@font/poppinsmedium"
                     android:gravity="right"
                     android:text="Admin"
                     android:textColor="#4984C6"

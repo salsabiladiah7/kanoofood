@@ -30,7 +30,7 @@ public class Register extends AppCompatActivity {
 
     TextInputEditText teName, teNumber, teEmail, tePassword;
     RadioGroup rgGender;
-    RadioButton rbLaki, rbPerempuan, rbGender;
+    RadioButton rbGender;
     TextView tvLogin, tvTgl_Lahir;
     Button btnRegister;
     ProgressBar progressBar;
@@ -47,9 +47,7 @@ public class Register extends AppCompatActivity {
         teNumber = findViewById(R.id.nomor);
         teEmail = findViewById(R.id.email);
         tePassword = findViewById(R.id.password);
-        rgGender = findViewById(R.id.gender);
-        rbLaki = findViewById(R.id.btn_laki);
-        rbPerempuan = findViewById(R.id.btn_perempuan);
+        rgGender = findViewById(R.id.rg_gender);
         btnRegister = findViewById(R.id.btn_signup);
         progressBar = findViewById(R.id.progress);
         tvTgl_Lahir = findViewById(R.id.tgl_lahir);
@@ -64,14 +62,15 @@ public class Register extends AppCompatActivity {
             }
         });
 
-        Calendar calendar = Calendar.getInstance();
-        final int year = calendar.get(Calendar.YEAR);
-        final int month = calendar.get(Calendar.MONTH);
-        final int day = calendar.get(Calendar.DAY_OF_MONTH);
 
         tvTgl_Lahir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Calendar calendar = Calendar.getInstance();
+                final int year = calendar.get(Calendar.YEAR);
+                final int month = calendar.get(Calendar.MONTH);
+                final int day = calendar.get(Calendar.DAY_OF_MONTH);
+
                 DatePickerDialog datePickerDialog = new DatePickerDialog(
                         Register.this, android.R.style.Theme_Holo_Light_Dialog_MinWidth, setListener, year, month, day);
                 datePickerDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
@@ -81,9 +80,9 @@ public class Register extends AppCompatActivity {
 
         setListener = new DatePickerDialog.OnDateSetListener() {
             @Override
-            public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+            public void onDateSet(DatePicker view, int year, int month, int day) {
                 month = month + 1;
-                date = day + "/" + month + "/" + year;
+                date = year + "-" + month + "-" + day;
                 tvTgl_Lahir.setText(date);
             }
         };
@@ -92,8 +91,8 @@ public class Register extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                int idradio = rgGender.getCheckedRadioButtonId();
-                rbGender = findViewById(idradio);
+                int selectedId = rgGender.getCheckedRadioButtonId();
+                rbGender = findViewById(selectedId);
 
                 final String nama = teName.getText().toString();
                 final String nomor = teNumber.getText().toString();

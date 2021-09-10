@@ -10,14 +10,12 @@ import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProvider;
 
 import com.mafaa.kanoofood.R;
 
 public class StoreFragment extends Fragment {
 
     Button btnFood;
-    private StoreViewModel mViewModel;
 
     public static StoreFragment newInstance() {
         return new StoreFragment();
@@ -41,12 +39,5 @@ public class StoreFragment extends Fragment {
         });
     }
 
-
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        mViewModel = new ViewModelProvider(this).get(StoreViewModel.class);
-        // TODO: Use the ViewModel
-    }
 
 }
